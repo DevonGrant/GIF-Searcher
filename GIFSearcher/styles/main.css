@@ -1,0 +1,178 @@
+*{
+			font-family:verdana,tahoma,sans-serif;
+		}
+	
+ 		header{
+ 			background: url('../images/tgif.gif');
+ 			height:240px;
+ 		}
+ 		
+ 		header h1{
+ 			margin:0;
+ 			color:blue;
+ 			text-align:center;
+ 			font-size:100px;
+ 			padding-top: 35px;
+ 		}
+        body{
+            background-color:#fceca9;
+        }
+ 		
+ 		#status{
+ 			font-style: italic;
+ 		}
+ 		
+        #content{
+            margin: 0 auto;
+            width:90%;
+            display:grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap:40px 20px;
+        }
+
+        .result img{
+            width:100%;
+            box-shadow: 0 10px 20px 0px rgba(0,0,0, .4);
+            border: 1px solid #ccc;
+        }
+
+        .result img:hover{
+            border: 1px solid #777;
+        }
+        
+        .result span{
+            order:-1;
+        }
+
+        button {
+	       box-shadow: 3px 4px 0px 0px #899599;
+	       background:linear-gradient(to bottom, #ededed 5%, #bab1ba 100%);
+	       background-color:#ededed;
+	       border-radius:15px;
+	       border:1px solid #d6bcd6;
+	       display:inline-block;
+	       cursor:pointer;
+	       color:#3a8a9e;
+	       font-family:Arial;
+	       font-size:17px;
+	       padding:7px 25px;
+	       text-decoration:none;
+	       text-shadow:0px 1px 0px #e1e2ed;
+        }
+        button:hover {
+	       background:linear-gradient(to bottom, #bab1ba 5%, #ededed 100%);
+	       background-color:#bab1ba;
+        }
+        button:active {
+	       position:relative;
+	       top:1px;
+        }
+        button:focus {
+            outline:0;
+        }
+        
+		.widgets{
+			margin-top: 1em;
+			margin-bottom:1em;
+		}
+        .titleOverlay{
+            position:relative;
+            padding:0;
+            //width:300px;
+            //display:block;
+            //cursor:pointer;
+            //overflow:hidden;
+        }
+        .content {
+            opacity:0;
+            font-size: 20px;
+            position:absolute;
+            top:0;
+            left:0;
+            color:#1c87c9;
+            background-color:rgba(200,200,200,0.5);
+            width:100%;
+            height:100%;
+            -webkit-transition: all 400ms ease-out;
+            -moz-transition: all 400ms ease-out;
+            -o-transition: all 400ms ease-out;
+            -ms-transition: all 400ms ease-out;
+            transition: all 400ms ease-out;
+            text-align:center;
+        } 
+        .titleOverlay .content:hover { opacity:1; }      
+        .titleOverlay .content .text {
+            height:0;
+            opacity:1;
+            transition-delay: 0s;
+            transition-duration: 0.4s;
+        }
+        .titleOverlay .content:hover .text {
+            opacity:1;
+            transform: translateY(50px);
+            -webkit-transform: translateY(50px);
+        }
+
+        #topBtn {
+            position: fixed;
+            bottom: 5%;
+            right: 50%;
+            z-index: 99; 
+            box-shadow: 3px 4px 0px 0px #899599;
+            background:linear-gradient(to bottom, #ededed 5%, #bab1ba 100%);
+	        background-color:#ededed;
+	        border-radius:15px;
+	        border:1px solid #d6bcd6;
+	        display:inline-block;
+	        cursor:pointer;
+	        color:#3a8a9e;
+	        font-family:Arial;
+	        font-size:17px;
+	        padding:7px 25px;
+	        text-decoration:none;
+	        text-shadow:0px 1px 0px #e1e2ed;
+        }
+        #nxtBtn {
+            border-radius: 50%;
+            position: fixed;
+            z-index: 99;
+            bottom: 5%;
+            right: 5%;
+            box-shadow: 3px 4px 0px 0px #899599;
+            background:linear-gradient(to bottom, #ededed 5%, #bab1ba 100%);
+	        background-color:#ededed;
+	        border-radius:15px;
+	        border:1px solid #d6bcd6;
+	        display:inline-block;
+	        cursor:pointer;
+	        color:#3a8a9e;
+	        font-family:Arial;
+	        font-size:17px;
+	        padding:7px 25px;
+	        text-decoration:none;
+	        text-shadow:0px 1px 0px #e1e2ed;
+        }
+        #bckBtn {
+            border-radius: 50%;
+            position: fixed;
+            z-index: 99;
+            bottom: 5%;
+            left: 5%; 
+            box-shadow: 3px 4px 0px 0px #899599;
+            background:linear-gradient(to bottom, #ededed 5%, #bab1ba 100%);
+	        background-color:#ededed;
+	        border-radius:15px;
+	        border:1px solid #d6bcd6;
+	        display:inline-block;
+	        cursor:pointer;
+	        color:#3a8a9e;
+	        font-family:Arial;
+	        font-size:17px;
+	        padding:7px 25px;
+	        text-decoration:none;
+	        text-shadow:0px 1px 0px #e1e2ed;
+        }
+  
+  
+
+  

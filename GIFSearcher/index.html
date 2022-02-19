@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+ 	<title>GIF Searcher</title>
+    <link rel="stylesheet" type = "text/css" href = "styles/main.css" />
+ 	<script src = "js/main.js"></script>
+
+  
+</head>
+<body>
+<header>
+	
+</header>
+
+<div class="widgets">
+	Search for a GIF  
+	<input id="searchterm" type="text" size="20" maxlength="20" autofocus value="Gaming" />
+</div>
+
+<div class="widgets">
+	Max # of results  
+	<select id="limit">
+		<option value="5">5</option>
+		<option value="10" selected>10</option>
+		<option value="25">25</option>
+		<option value="50">50</option>
+		<option value="100">100</option>
+	</select>
+</div>
+
+<div class="widgets">
+	<button type="button" id="search" onclick="searchButtonClicked()">Search for GIF
+    </button>
+    <button type="button" id="trending" onclick="trendingButtonClicked()">See what's trending!</button>
+</div>
+<div id="status">Ready to Search!</div>
+<hr>
+
+<h2>Results</h2>
+<div id="content" >
+	<p>No data yet!</p>
+</div>
+ 
+<button type="button" id="nxtBtn" onclick="forwardButtonClicked()" title="Go to next page">⇨</button>
+    <button type="button" id="bckBtn" onclick="backButtonClicked()" title="Go to previous page">⇦</button>
+    <button onclick="topFunction()" id="topBtn" title="Go to top">⇪</button>
+</body>
+</html>
